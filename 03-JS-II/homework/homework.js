@@ -22,9 +22,10 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if(edad>=18){
-    return("Allowed")
-  }else{
-    return("Not Allowed")
+    return("Allowed");
+  }
+  if(edad<18){
+    return("Not Allowed");
   }
 }
   
@@ -87,8 +88,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero === 10 || numero === 5)
-  {
+  if(numero === 10 || numero === 5){
     return "true";
   }
   return "false";
